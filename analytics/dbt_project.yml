@@ -1,13 +1,24 @@
-name: analytics
+name: 'analytics'
 
-profile: analytics
+# This setting specifies which profile to use in your profiles.yml file
+profile: 'analytics'
 
+# These configurations specify where dbt should look for various files.
 seed-paths: [ "seeds" ]
 model-paths: [ "models" ]
 macro-paths: [ "macros" ]
+analysis-paths: [ "analyses" ]
+test-paths: [ "tests" ]
+snapshot-paths: [ "snapshots" ]
+
+target-path: "target"
 clean-targets:
 - "target"
 - "dbt_packages"
 
-# models:
-#   analytics:
+# Configuring models
+# https://docs.getdbt.com/docs/configuring-models
+models:
+  analytics:
+    # example:
+    #   materialized: view
