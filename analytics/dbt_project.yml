@@ -20,5 +20,4 @@ clean-targets:
 # https://docs.getdbt.com/docs/configuring-models
 models:
   analytics:
-    # example:
-    #   materialized: view
+    +materialized: table
