@@ -14,3 +14,10 @@ wheels/
 data/
 *.duckdb
 logs/
+
+# personal learning doc
+learning.md
+
+
+# dbt generated files
+.user.yml
